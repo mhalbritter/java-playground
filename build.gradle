@@ -1,0 +1,15 @@
+plugins {
+	id 'org.graalvm.buildtools.native' version '0.9.11' apply false
+}
+
+subprojects {
+	apply plugin: 'java'
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
+}
+
+
